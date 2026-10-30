@@ -1,0 +1,179 @@
+<style>
+.sec-1 { background: #0a2a3c !important; }
+.sec-2 { background: #0077cc !important; }
+.sec-3 { background: #e94e1b !important; }
+.sec-4 { background: #6a1b9a !important; }
+.sec-5 { background: #009688 !important; }
+.sec-6 { background: #ff5722 !important; }
+.sec-7 { background: #c2185b !important; }
+:root { --brand: #0077cc; --brand-2: #005fa3; --accent: #ffcc00; --brand-shadow: rgba(0,123,204,0.6); }
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+* { font-family: 'Inter', sans-serif; }
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+.anim-up { animation: fadeInUp 0.6s ease both; }
+.anim-fade { animation: fadeIn 0.8s ease both; }
+.btn-grad { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+.btn-grad:hover { transform: translateY(-2px); box-shadow: 0 12px 28px var(--brand-shadow); }
+.card-lift { transition: transform 0.25s ease, box-shadow 0.25s ease; box-shadow: 0 8px 28px rgba(0,0,0,0.28), 0 2px 8px rgba(0,0,0,0.12); }
+.card-lift:hover { transform: translateY(-5px); box-shadow: 0 20px 52px rgba(0,0,0,0.38), 0 4px 12px rgba(0,0,0,0.14); }
+</style>
+
+<div class="row sectionBlockLayout sec-1" data-component-theme="portalThemeColor8"
+ style="display: flex; flex-wrap: wrap; min-height: 520px;
+ background-image: url('https://cdn.hubblecontent.osi.office.net/m365content/publish/1b77166a-d2be-44d9-a349-f335813df072/thumbnails/xxlarge.jpg') !important;
+ background-size: cover; background-position: center;">
+ <div class="container" style="display: flex; flex-wrap: wrap; width: 100%;">
+ <div class="col-md-12 columnBlockLayout"
+ style="flex-grow: 1; display: flex; flex-direction: column;
+ justify-content: center; align-items: center; text-align: center;
+ padding: 80px 48px;
+ background: linear-gradient(rgba(10,42,60,0.7), rgba(10,42,60,0.85));">
+ <span style="font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: #a5b4fc; font-weight: 600; display: block; margin-bottom: 16px;">Welcome to SwimNest</span>
+ <h1 class="anim-up" style="font-size: clamp(2.4rem, 5vw, 3.8rem); font-weight: 800; line-height: 1.15; letter-spacing: -0.02em; color: #fff; margin-bottom: 20px;">Your Journey to Confident Swimming Starts Here</h1>
+ <p class="anim-up" style="font-size: 1.1rem; color: rgba(255,255,255,0.85); max-width: 580px; line-height: 1.7; margin-bottom: 36px;">Expert swimming lessons for all ages and skill levels in a safe, nurturing environment. Join SwimNest and dive into fun, fitness, and confidence.</p>
+ <div style="display: flex; gap: 16px; flex-wrap: wrap; justify-content: center;">
+ <button class="button1 btn-grad" style="background: linear-gradient(135deg, var(--brand), var(--brand-2)); color: #fff; border: none; border-radius: 999px; padding: 14px 36px; font-weight: 700; font-size: 1rem; cursor: pointer;" onclick="window.location.href='#classes'">Explore Classes</button>
+ <button class="button1" style="background: transparent; color: #fff; border: 2px solid rgba(255,255,255,0.6); border-radius: 999px; padding: 12px 32px; font-weight: 600; cursor: pointer;" onclick="window.location.href='#about'">Learn More</button>
+ </div>
+ </div>
+ </div>
+</div>
+
+<div class="row sectionBlockLayout sec-2" data-component-theme="portalThemeColor2"
+ style="display: flex; flex-wrap: wrap; min-height: auto; clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);">
+ <div class="container" style="display: flex; flex-wrap: wrap; width: 100%;">
+ <div class="col-md-12 columnBlockLayout"
+ style="flex-grow: 1; display: flex; flex-direction: column; padding: 64px 40px;">
+ <div style="text-align: center; margin-bottom: 48px;">
+ <span style="font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.75); font-weight: 600; display: block; margin-bottom: 10px;">Our Programs</span>
+ <h2 style="font-size: clamp(1.5rem, 3vw, 2.2rem); font-weight: 700; color: #fff; margin-bottom: 12px;">Classes Designed for Every Age and Skill</h2>
+ <p style="color: rgba(255,255,255,0.85); max-width: 520px; margin: 0 auto; line-height: 1.7;">From beginner toddlers to advanced swimmers, our tailored lessons build skills, safety, and confidence in the water.</p>
+ </div>
+ <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px;">
+ <div class="card-lift" style="background: rgba(255,255,255,0.70); border-radius: 20px; padding: 32px;">
+ <div style="width: 48px; height: 48px; border-radius: 14px; background: var(--brand); display: flex; align-items: center; justify-content: center; font-size: 1.4rem; margin-bottom: 20px;">🐣</div>
+ <h3 style="font-size: 1.05rem; font-weight: 700; color: #1a1a1a; margin-bottom: 8px;">Tiny Tots</h3>
+ <p style="color: #555; line-height: 1.65; margin: 0; font-size: 0.95rem;">Fun introductory water safety and basic skills for children aged 6 months to 3 years.</p>
+ </div>
+ <div class="card-lift" style="background: rgba(255,255,255,0.70); border-radius: 20px; padding: 32px;">
+ <div style="width: 48px; height: 48px; border-radius: 14px; background: var(--brand); display: flex; align-items: center; justify-content: center; font-size: 1.4rem; margin-bottom: 20px;">🏊‍♂️</div>
+ <h3 style="font-size: 1.05rem; font-weight: 700; color: #1a1a1a; margin-bottom: 8px;">Youth Swim</h3>
+ <p style="color: #555; line-height: 1.65; margin: 0; font-size: 0.95rem;">Skill-building classes for kids 4 to 12 years, focusing on stroke development and water confidence.</p>
+ </div>
+ <div class="card-lift" style="background: rgba(255,255,255,0.70); border-radius: 20px; padding: 32px;">
+ <div style="width: 48px; height: 48px; border-radius: 14px; background: var(--brand); display: flex; align-items: center; justify-content: center; font-size: 1.4rem; margin-bottom: 20px;">🌊</div>
+ <h3 style="font-size: 1.05rem; font-weight: 700; color: #1a1a1a; margin-bottom: 8px;">Adult Classes</h3>
+ <p style="color: #555; line-height: 1.65; margin: 0; font-size: 0.95rem;">Beginner to advanced lessons tailored for adults seeking fitness, skill, or confidence in the water.</p>
+ </div>
+ <div class="card-lift" style="background: rgba(255,255,255,0.70); border-radius: 20px; padding: 32px;">
+ <div style="width: 48px; height: 48px; border-radius: 14px; background: var(--brand); display: flex; align-items: center; justify-content: center; font-size: 1.4rem; margin-bottom: 20px;">👨‍👩‍👧‍👦</div>
+ <h3 style="font-size: 1.05rem; font-weight: 700; color: #1a1a1a; margin-bottom: 8px;">Family Swim</h3>
+ <p style="color: #555; line-height: 1.65; margin: 0; font-size: 0.95rem;">Group sessions designed for families to learn and enjoy swimming together in a supportive setting.</p>
+ </div>
+ </div>
+ </div>
+ </div>
+</div>
+
+<div class="row sectionBlockLayout sec-3" data-component-theme="portalThemeColor8"
+ style="display: flex; flex-wrap: wrap; min-height: auto;">
+ <div class="container" style="display: flex; flex-wrap: wrap; width: 100%;">
+ <div class="col-md-12 columnBlockLayout"
+ style="flex-grow: 1; display: flex; flex-direction: column; padding: 64px 40px;">
+ <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 32px; text-align: center;">
+ <div>
+ <div style="font-size: 3rem; font-weight: 800; color: var(--accent); line-height: 1;">15+</div>
+ <p style="color: rgba(255,255,255,0.75); margin-top: 8px; font-weight: 500; font-size: 0.95rem;">Years of Experience</p>
+ </div>
+ <div>
+ <div style="font-size: 3rem; font-weight: 800; color: var(--accent); line-height: 1;">500+</div>
+ <p style="color: rgba(255,255,255,0.75); margin-top: 8px; font-weight: 500; font-size: 0.95rem;">Happy Swimmers</p>
+ </div>
+ <div>
+ <div style="font-size: 3rem; font-weight: 800; color: var(--accent); line-height: 1;">20</div>
+ <p style="color: rgba(255,255,255,0.75); margin-top: 8px; font-weight: 500; font-size: 0.95rem;">Certified Instructors</p>
+ </div>
+ <div>
+ <div style="font-size: 3rem; font-weight: 800; color: var(--accent); line-height: 1;">4</div>
+ <p style="color: rgba(255,255,255,0.75); margin-top: 8px; font-weight: 500; font-size: 0.95rem;">Convenient Locations</p>
+ </div>
+ </div>
+ </div>
+ </div>
+</div>
+
+<div class="row sectionBlockLayout sec-4" data-component-theme="portalThemeColor3"
+ style="display: flex; flex-wrap: wrap; min-height: auto; clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);">
+ <div class="container" style="display: flex; flex-wrap: wrap; width: 100%;">
+ <div class="col-md-6 columnBlockLayout"
+ style="flex-grow: 1; display: flex; flex-direction: column; justify-content: center; padding: 64px 40px;">
+ <span style="font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.75); font-weight: 600; display: block; margin-bottom: 10px;">About SwimNest</span>
+ <h2 style="font-size: clamp(1.5rem, 3vw, 2.2rem); font-weight: 700; color: #fff; margin-bottom: 16px;">Committed to Safety and Growth</h2>
+ <p style="color: rgba(255,255,255,0.85); line-height: 1.7; padding: 8px 0;">At SwimNest, we prioritize safety, personalized instruction, and a welcoming atmosphere. Our certified instructors guide swimmers of all ages through progressive lessons that build skills and confidence.</p>
+ <button class="button1 btn-grad" style="background: linear-gradient(135deg, var(--brand), var(--brand-2)); color: #fff; border: none; border-radius: 999px; padding: 14px 36px; font-weight: 700; font-size: 1rem; cursor: pointer; margin-top: 8px; align-self: flex-start;" onclick="window.location.href='#contact'">Get in Touch</button>
+ </div>
+ <div class="col-md-6 columnBlockLayout"
+ style="flex-grow: 1; display: flex; flex-direction: column; justify-content: center; padding: 64px 40px;">
+ <img style="width: 100%; height: auto; border-radius: 20px; box-shadow: 0 20px 56px rgba(0,0,0,0.13);" class="anim-fade" src="https://cdn.hubblecontent.osi.office.net/m365content/publish/8a0f2081-6bdf-4ccb-a2cc-cb224ba1d91c/thumbnails/xxlarge.jpg" alt="Swimming instructor teaching child">
+ </div>
+ </div>
+</div>
+
+<div class="row sectionBlockLayout sec-5" data-component-theme="portalThemeColor4"
+ style="display: flex; flex-wrap: wrap; min-height: auto;">
+ <div class="container" style="display: flex; flex-wrap: wrap; width: 100%;">
+ <div class="col-md-6 columnBlockLayout"
+ style="flex-grow: 1; display: flex; flex-direction: column; justify-content: center; padding: 64px 40px;">
+ <span style="font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.75); font-weight: 600; display: block; margin-bottom: 10px;">For Parents</span>
+ <h2 style="font-size: clamp(1.5rem, 3vw, 2.2rem); font-weight: 700; color: #fff; margin-bottom: 24px;">Classes & Resources</h2>
+ <div style="display: flex; flex-direction: column; gap: 16px;">
+ <div style="display: flex; gap: 14px; align-items: flex-start;">
+ <div style="width: 32px; height: 32px; border-radius: 50%; background: rgba(255,255,255,0.2); display: flex; align-items: center; justify-content: center; font-size: 1rem; flex-shrink: 0;">✓</div>
+ <div>
+ <div style="font-weight: 700; color: #fff; margin-bottom: 4px;">Flexible Scheduling</div>
+ <div style="color: rgba(255,255,255,0.8); font-size: 0.92rem; line-height: 1.6;">Multiple class times to fit your family's busy life.</div>
+ </div>
+ </div>
+ <div style="display: flex; gap: 14px; align-items: flex-start;">
+ <div style="width: 32px; height: 32px; border-radius: 50%; background: rgba(255,255,255,0.2); display: flex; align-items: center; justify-content: center; font-size: 1rem; flex-shrink: 0;">✓</div>
+ <div>
+ <div style="font-weight: 700; color: #fff; margin-bottom: 4px;">Progress Tracking</div>
+ <div style="color: rgba(255,255,255,0.8); font-size: 0.92rem; line-height: 1.6;">Regular updates on your child's skill development and milestones.</div>
+ </div>
+ </div>
+ <div style="display: flex; gap: 14px; align-items: flex-start;">
+ <div style="width: 32px; height: 32px; border-radius: 50%; background: rgba(255,255,255,0.2); display: flex; align-items: center; justify-content: center; font-size: 1rem; flex-shrink: 0;">✓</div>
+ <div>
+ <div style="font-weight: 700; color: #fff; margin-bottom: 4px;">Safety First</div>
+ <div style="color: rgba(255,255,255,0.8); font-size: 0.92rem; line-height: 1.6;">Certified instructors trained in child safety and CPR.</div>
+ </div>
+ </div>
+ <div style="display: flex; gap: 14px; align-items: flex-start;">
+ <div style="width: 32px; height: 32px; border-radius: 50%; background: rgba(255,255,255,0.2); display: flex; align-items: center; justify-content: center; font-size: 1rem; flex-shrink: 0;">✓</div>
+ <div>
+ <div style="font-weight: 700; color: #fff; margin-bottom: 4px;">Parent Resources</div>
+ <div style="color: rgba(255,255,255,0.8); font-size: 0.92rem; line-height: 1.6;">Guides and tips to support your child's swimming journey at home.</div>
+ </div>
+ </div>
+ </div>
+ </div>
+ <div class="col-md-6 columnBlockLayout"
+ style="flex-grow: 1; display: flex; flex-direction: column; justify-content: center; padding: 64px 40px;">
+ <img style="width: 100%; height: auto; border-radius: 20px; box-shadow: 0 20px 56px rgba(0,0,0,0.2);" class="anim-fade" src="https://cdn.hubblecontent.msit.osi.office.net/m365content/publish/8e926ed6-afae-451c-9cbb-9851b0e1a8ba/thumbnails/xxlarge.jpg" alt="Parent watching child swim">
+ </div>
+ </div>
+</div>
+
+<div class="row sectionBlockLayout sec-6" data-component-theme="portalThemeColor8"
+ style="display: flex; flex-wrap: wrap; min-height: auto;">
+ <div class="container" style="display: flex; flex-wrap: wrap; width: 100%;">
+ <div class="col-md-12 columnBlockLayout"
+ style="flex-grow: 1; display: flex; flex-direction: column;
+ align-items: center; text-align: center; padding: 72px 48px;">
+ <h2 style="font-size: clamp(1.6rem, 3vw, 2.4rem); font-weight: 700; color: #fff; margin-bottom: 16px;">Ready to Dive In?</h2>
+ <p style="color: rgba(255,255,255,0.85); max-width: 500px; line-height: 1.7; margin-bottom: 36px; padding: 8px 0;">Join SwimNest today and give your family the gift of water safety, fitness, and fun. Contact us to find the perfect class for you.</p>
+ <button class="button1" style="background: rgba(255,255,255,0.5); color: var(--brand); border: none; border-radius: 999px; padding: 14px 40px; font-weight: 700; font-size: 1rem; cursor: pointer; box-shadow: 0 8px 24px rgba(0,0,0,0.15);" onclick="window.location.href='#contact'">Contact Us</button>
+ </div>
+ </div>
+</div>
