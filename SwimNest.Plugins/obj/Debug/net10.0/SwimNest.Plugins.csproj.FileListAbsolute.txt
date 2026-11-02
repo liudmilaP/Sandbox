@@ -1,0 +1,13 @@
+/workspaces/Sandbox/SwimNest.Plugins/bin/Debug/net10.0/SwimNest.Plugins.deps.json
+/workspaces/Sandbox/SwimNest.Plugins/bin/Debug/net10.0/SwimNest.Plugins.dll
+/workspaces/Sandbox/SwimNest.Plugins/bin/Debug/net10.0/SwimNest.Plugins.pdb
+/workspaces/Sandbox/SwimNest.Plugins/obj/Debug/net10.0/SwimNest.Plugins.csproj.AssemblyReference.cache
+/workspaces/Sandbox/SwimNest.Plugins/obj/Debug/net10.0/SwimNest.Plugins.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/Sandbox/SwimNest.Plugins/obj/Debug/net10.0/SwimNest.Plugins.AssemblyInfoInputs.cache
+/workspaces/Sandbox/SwimNest.Plugins/obj/Debug/net10.0/SwimNest.Plugins.AssemblyInfo.cs
+/workspaces/Sandbox/SwimNest.Plugins/obj/Debug/net10.0/SwimNest.Plugins.csproj.CoreCompileInputs.cache
+/workspaces/Sandbox/SwimNest.Plugins/obj/Debug/net10.0/SwimNest.Plugins.sourcelink.json
+/workspaces/Sandbox/SwimNest.Plugins/obj/Debug/net10.0/SwimNest.Plugins.dll
+/workspaces/Sandbox/SwimNest.Plugins/obj/Debug/net10.0/refint/SwimNest.Plugins.dll
+/workspaces/Sandbox/SwimNest.Plugins/obj/Debug/net10.0/SwimNest.Plugins.pdb
+/workspaces/Sandbox/SwimNest.Plugins/obj/Debug/net10.0/ref/SwimNest.Plugins.dll
