@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SwimNest.Plugins")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6292ceffe46f136ba91ac36097a5828a6df3febe")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fb3105cce7dcb1c90c20f92e890d4b69bca13d01")]
 [assembly: System.Reflection.AssemblyProductAttribute("SwimNest.Plugins")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SwimNest.Plugins")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
