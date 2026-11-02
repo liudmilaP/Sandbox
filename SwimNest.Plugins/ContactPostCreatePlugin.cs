@@ -1,7 +1,7 @@
-﻿using Microsoft.Xrm.Sdk;
-using Microsoft.Crm.Sdk;
+﻿using Microsoft.Crm.Sdk.Messages;
+using Microsoft.Xrm.Sdk;
 using Microsoft.Xrm.Sdk.Extensions;
-using Microsoft.Crm.Sdk.Messages;
+
 namespace SwimNest.Plugins;
 
 public sealed class ContactPostCreatePlugin : IPlugin
@@ -36,31 +36,25 @@ public sealed class ContactPostCreatePlugin : IPlugin
         }
 
         tracingService.Trace("ContactPostCreatePlugin executed for contact {0}.", context.PrimaryEntityId);
-    
 
-        CreateandSendWelcomeEmailForPotentialMember(contact,organisationService, tracingService);
-
+        CreateAndSendWelcomeEmailForPotentialMember(contact, organisationService, tracingService);
     }
 
-    void CreateandSendWelcomeEmailForPotentialMember(Entity contact,IOrganizationService service, ITracingService tracingService)
+    private void CreateAndSendWelcomeEmailForPotentialMember(
+        Entity contact,
+        IOrganizationService service,
+        ITracingService tracingService)
     {
-        // Implement the logic to create and send a welcome email for the potential member.
-        // This is a placeholder for the actual implementation.
-        
-     //generate functionality to create and send a welcome email for the contact
-     
-CreateandSendEmail(contact,service, tracingService);
-
         tracingService.Trace("Creating and sending welcome email for contact {0}.", contact.Id);
+        CreateAndSendEmail(contact, service, tracingService);
     }
 
-    //generate functionality to create and send a welcome email for the contact
-    void CreateandSendEmail(Entity contact, IOrganizationService service, ITracingService tracingService)
+    private void CreateAndSendEmail(
+        Entity contact,
+        IOrganizationService service,
+        ITracingService tracingService)
     {
-       //generate code here to create and send a welcome email for the contact
-        // This is a placeholder for the actual implementation.
-        tracingService.Trace("Welcome email sent for contact {0}.", contact.Id);    
-     var email = new Entity("email");
+        var email = new Entity("email");
         email["subject"] = "Welcome to SwimNest!";
         email["description"] = $"Hello {contact.GetAttributeValue<string>("firstname")},\n\n" +
                               "Welcome to SwimNest! We are excited to have you as a potential member.\n\n" +
@@ -80,12 +74,12 @@ CreateandSendEmail(contact,service, tracingService);
         var request = new SendEmailRequest
         {
             EmailId = emailId,
-            TrackingToken = "",
+            TrackingToken = string.Empty,
             IssueSend = true
         };
 
         service.Execute(request);
-       
+
+        tracingService.Trace("Welcome email sent for contact {0}.", contact.Id);
     }
-    
 }
